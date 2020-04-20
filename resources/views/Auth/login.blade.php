@@ -1,33 +1,39 @@
 @extends('layouts.main')
 
 @section('content')
-<marquee direction="left" scrollamount="20"><h1>تسجيل الدخول</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>Авторизоваться</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>Mlebu</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>เข้าสู่ระบบ</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>ログインする</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>Anmeldung</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>लॉग इन करें</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>Idħol</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>Σύνδεση</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>로그인</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>Ngena ngemvume</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>Σύνδεση</h1></marquee>
-<marquee direction="right" scrollamount="20"><h1>로그인</h1></marquee>
-<marquee direction="left" scrollamount="20"><h1>Ngena ngemvume</h1></marquee>
+<div class="marque">
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">تسجيل الدخول</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Авторизоваться</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Mlebu</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">เข้าสู่ระบบ</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">ログインする</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Anmeldung</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">लॉग इन करें</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Idħol</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Σύνδεση</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">로그인</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Ngena ngemvume</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Σύνδεση</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">로그인</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Ngena ngemvume</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Авторизоваться</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Accesso</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Logáil isteach</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">登录</h1></marquee>
+</div>
 
 <div class="container min-vh-95 mt-5">
 
-  <div class="bglogin">
-    <img src="{{url('assets/img/logo.png')}}" width="120">
-  </div>
     <div class="login-form center mb-5">
+      <div class="bglogin">
+        <img src="{{url('assets/img/logo.png')}}" width="120">
+      </div>
       <h1>&nbsp;</h1>
 
-      <form method="POST" action="{{ url('/postLogin') }}" autocomplete="off">asdasdasd
+      <form method="POST" action="{{ url('/postLogin') }}" autocomplete="off">
         {{ csrf_field() }}
         <marquee direction="up" behavior="slide" scrollamount="7">
-        <div class="form-label-group mt-7">
+        <div class="form-label-group">
           <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required autofocus>
         </div>
         </marquee>
