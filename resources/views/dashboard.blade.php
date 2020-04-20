@@ -18,6 +18,7 @@
   @endif -->
 
   <div id="clock" style="font-size: 50px; padding-top: 20%;" align="center"></div>
+  <div id="shadow" align="center"></div>
 		
 </section>
 @endsection
