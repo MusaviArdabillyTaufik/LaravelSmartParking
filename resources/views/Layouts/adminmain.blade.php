@@ -74,7 +74,7 @@
                 <a class="nav-link" href="{{url('/petugas')}}"><i class="fa fa-user"></i> <span>Petugas</span></a>
               </li>
               <li id="mahasiswa" class="">
-                <a class="nav-link" href="{{url('/mahasiswa')}}"><i class="fa fa-user-o"></i> <span>Mahasiswa</span></a>
+                <a class="nav-link" href="{{url('/mahasiswa')}}"><i class="fa fa-users"></i> <span>Mahasiswa</span></a>
               </li>
               <hr class="sidebar-divider my-0">
               <li id="laporan" class="">
