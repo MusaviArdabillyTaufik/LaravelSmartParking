@@ -12,10 +12,10 @@
   <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Idħol</h1></marquee>
   <marquee direction="left" scrollamount="20"><h1 class="text-info">Σύνδεση</h1></marquee>
   <marquee direction="right" scrollamount="20"><h1 class="text-secondary">로그인</h1></marquee>
-  <marquee direction="left" scrollamount="20"><h1 class="text-info">Ngena ngemvume</h1></marquee>
+  <marquee direction="left" scrollamount="20"><h1 class="text-info">Masuk</h1></marquee>
   <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Σύνδεση</h1></marquee>
   <marquee direction="left" scrollamount="20"><h1 class="text-info">로그인</h1></marquee>
-  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Ngena ngemvume</h1></marquee>
+  <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Log In</h1></marquee>
   <marquee direction="left" scrollamount="20"><h1 class="text-info">Авторизоваться</h1></marquee>
   <marquee direction="right" scrollamount="20"><h1 class="text-secondary">Accesso</h1></marquee>
   <marquee direction="left" scrollamount="20"><h1 class="text-info">Logáil isteach</h1></marquee>
