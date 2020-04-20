@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\User;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -11,6 +12,9 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function dashboard(){
-    	return view('dashboard');
+    	$totaladmin = User::where(['role' => 'admin'])->count();
+    	$totalpetugas = User::where(['role' => 'petugas'])->count();
+    	$totalmahasiswa = User::where(['role' => 'mahasiswa'])->count();
+    	return view('dashboard', compact('totaladmin', 'totalpetugas', 'totalmahasiswa'));
     }
 }
