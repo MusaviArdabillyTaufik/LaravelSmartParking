@@ -64,21 +64,21 @@
             <!-- List Menu Sebagai Admin -->
 
               <li id="dashboard" class="">
-                <a class="nav-link" href="{{url('/dashboard')}}"><i class="far fa-circle"></i> <span>Dashboard</span></a>
+                <a class="nav-link" href="{{url('/dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
               </li>
               <hr class="sidebar-divider my-0">
               <li id="admin" class="">
-                <a class="nav-link" href="{{url('/admin')}}"><i class="far fa-circle"></i> <span>Admin</span></a>
+                <a class="nav-link" href="{{url('/admin')}}"><i class="fa fa-user-secret"></i> <span>Admin</span></a>
               </li>
               <li id="petugas" class="">
-                <a class="nav-link" href="{{url('/petugas')}}"><i class="far fa-circle"></i> <span>Petugas</span></a>
+                <a class="nav-link" href="{{url('/petugas')}}"><i class="fa fa-user"></i> <span>Petugas</span></a>
               </li>
               <li id="mahasiswa" class="">
-                <a class="nav-link" href="{{url('/mahasiswa')}}"><i class="far fa-circle"></i> <span>Mahasiswa</span></a>
+                <a class="nav-link" href="{{url('/mahasiswa')}}"><i class="fa fa-user-o"></i> <span>Mahasiswa</span></a>
               </li>
               <hr class="sidebar-divider my-0">
               <li id="laporan" class="">
-                <a class="nav-link" href="{{url('/laporan')}}"><i class="far fa-circle"></i> <span>Laporan</span></a>
+                <a class="nav-link" href="{{url('/laporan')}}"><i class="fa fa-server"></i> <span>Laporan</span></a>
               </li>
 
           </ul>
