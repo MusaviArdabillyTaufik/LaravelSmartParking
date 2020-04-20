@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\User;
+use App\Laporan;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -15,6 +16,8 @@ class Controller extends BaseController
     	$totaladmin = User::where(['role' => 'admin'])->count();
     	$totalpetugas = User::where(['role' => 'petugas'])->count();
     	$totalmahasiswa = User::where(['role' => 'mahasiswa'])->count();
-    	return view('dashboard', compact('totaladmin', 'totalpetugas', 'totalmahasiswa'));
+    	$totalmasuk = Laporan::count();
+    	$totalkeluar = Laporan::whereNotNull('keluar')->count();
+    	return view('dashboard', compact('totaladmin', 'totalpetugas', 'totalmahasiswa', 'totalmasuk', 'totalkeluar'));
     }
 }
