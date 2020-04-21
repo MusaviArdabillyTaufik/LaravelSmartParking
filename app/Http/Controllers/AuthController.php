@@ -41,7 +41,7 @@ class AuthController extends Controller
     }
 
 
-    // API Mobile Login
+    // API Mobile Login 
     public function loginAPI(Request $request){
 
         $server = "localhost";
