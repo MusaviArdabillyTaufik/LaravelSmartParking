@@ -13,25 +13,33 @@
   <marquee direction="up" scrollamount="50" behavior="slide"><div class="row">
     <div class="col-12 col-md-6 col-lg-4">
       <a href="{{url('admin')}}" class="nounderline">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+      <a href="/admin" class="nounderline">
       <div class="card card-primary">
         <div class="card-header">
             <i id="micon" class="fa fa-user-secret" aria-hidden="true"></i>
           <div class="ml-auto">
             <h4>Total Admin</h4>
             <h3 align="center">{{ $totaladmin }}</h3>
+            <h3>{{ $totaladmin }}</h3>
           </div>
         </div>
       </div>
       </a>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
+
       <a href="{{url('petugas')}}" class="nounderline">
       <div class="card card-warning">
+      <a href="/petugas" class="nounderline">
+      <div class="card card-secondary">
         <div class="card-header">
             <i id="micon" class="fa fa-user" aria-hidden="true"></i>
           <div class="ml-auto">
             <h4>Total Patugas</h4>
             <h3 align="center">{{ $totalpetugas }}</h3>
+            <h3>{{ $totalpetugas }}</h3>
           </div>
         </div>
       </div>
@@ -39,12 +47,14 @@
     </div>
     <div class="col-12 col-md-6 col-lg-4">
       <a href="{{url('mahasiswa')}}" class="nounderline">
+      <a href="/mahasiswa" class="nounderline">
       <div class="card card-info">
         <div class="card-header">
             <i id="micon" class="fa fa-users" aria-hidden="true"></i>
           <div class="ml-auto">
             <h4>Total Mahasiswa</h4>
             <h3 align="center">{{ $totalmahasiswa }}</h3>
+            <h3>{{ $totalmahasiswa }}</h3>
           </div>
         </div>
       </div>
@@ -54,12 +64,17 @@
   <marquee direction="up" scrollamount="50" behavior="slide"><div class="row d-flex justify-content-around">
     <div class="col-12 col-md-6 col-lg-3">
       <a href="{{url('laporan')}}" class="nounderline">
+  </div>
+  <div class="row d-flex justify-content-around">
+    <div class="col-12 col-md-6 col-lg-3">
+      <a href="/laporan" class="nounderline">
       <div class="card card-success">
         <div class="card-header">
             <i id="micon" class="fa fa-sign-in" aria-hidden="true"></i>
           <div class="ml-auto">
             <h4>Total Kendaraan Masuk</h4>
             <h3 align="center">{{ $totalmasuk }}</h3>
+            <h3 class="text-center">{{ $totalmasuk }}</h3>
           </div>
         </div>
       </div>
@@ -67,12 +82,15 @@
     </div>
     <div class="col-12 col-md-6 col-lg-3">
       <a href="{{url('laporan')}}" class="nounderline">
+      <a href="/laporan" class="nounderline">
       <div class="card card-danger">
         <div class="card-header">
             <i id="micon" class="fa fa-sign-out" aria-hidden="true"></i>
           <div class="ml-auto">
             <h4 align="center">Total Kendaraan Keluar</h4>
             <h3 align="center">{{ $totalkeluar }}</h3>
+            <h4>Total Kendaraan Keluar</h4>
+            <h3 class="text-center">{{ $totalkeluar }}</h3>
           </div>
         </div>
       </div>
@@ -84,5 +102,10 @@
   </marquee>
   <div id="shadow" align="center" class="d-none"></div>
     
+
+  </div>
+  <div id="clock" style="font-size: 50px; padding: 5%;" align="center"></div>
+  <div id="shadow" align="center" class="d-none"></div>
+		
 </section>
 @endsection

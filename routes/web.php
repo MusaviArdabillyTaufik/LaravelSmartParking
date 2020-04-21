@@ -55,4 +55,9 @@ Route::group(['middleware' => ['auth','checkRole:admin']], function(){
     Route::get('/laporan/export', 'LaporanController@export');
 });
 
+// Api
+Route::get('/admin/api', 'AdminController@api');
+Route::get('/petugas/api', 'PetugasController@api');
+Route::get('/mahasiswa/api', 'MahasiswaController@api');
+
 ?>

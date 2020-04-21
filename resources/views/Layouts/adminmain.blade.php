@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('css/toastr.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{asset('assets/css/components.css') }}">
 </head>
 
 <body>
@@ -38,8 +42,8 @@
             <img alt="image" src="{{ asset('assets/img/avatar/avatar-1.png') }}" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Hai, {{auth()->user()->nama_user}}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item has-icon">
-                <i class="far fa-envelope" style="padding-top: 2px;"></i> {{auth()->user()->email}}
+              <a href="{{url('/profile')}}" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
               </a>
               <div class="dropdown-divider"></div>
               <a href="{{url('/logout')}}" class="dropdown-item has-icon text-danger">
@@ -64,7 +68,7 @@
             <!-- List Menu Sebagai Admin -->
 
               <li id="dashboard" class="">
-                <a class="nav-link" href="{{url('/dashboard')}}"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+                <a class="nav-link" href="{{url('/dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
               </li>
               <hr class="sidebar-divider my-0">
               <li id="admin" class="">
@@ -79,6 +83,17 @@
               <hr class="sidebar-divider my-0">
               <li id="laporan" class="">
                 <a class="nav-link" href="{{url('/laporan')}}"><i class="fas fa-server"></i> <span>Laporan</span></a>
+                <a class="nav-link" href="{{url('/admin')}}"><i class="fa fa-user-secret"></i> <span>Admin</span></a>
+              </li>
+              <li id="petugas" class="">
+                <a class="nav-link" href="{{url('/petugas')}}"><i class="fa fa-user"></i> <span>Petugas</span></a>
+              </li>
+              <li id="mahasiswa" class="">
+                <a class="nav-link" href="{{url('/mahasiswa')}}"><i class="fa fa-users"></i> <span>Mahasiswa</span></a>
+              </li>
+              <hr class="sidebar-divider my-0">
+              <li id="laporan" class="">
+                <a class="nav-link" href="{{url('/laporan')}}"><i class="fa fa-server"></i> <span>Laporan</span></a>
               </li>
 
           </ul>

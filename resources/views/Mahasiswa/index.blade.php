@@ -61,11 +61,13 @@
                         <i class="fas fa-edit"></i> Profile
                       </button>
                     </a>
+                    &nbsp;
                     <a href="{{url('mahasiswa/'.$mahasiswa->id. '/editPass')}}">
                       <button type="button" class="btn btn-outline-warning" data-toggle="tooltip" data-placement="top" title="Edit Password">
                         <i class="fas fa-edit"></i> Password
                       </button>
                     </a>
+                    &nbsp;
                     <a href="{{url('mahasiswa/'.$mahasiswa->id. '/delete')}}">
                       <button type="button" class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Hapus">
                         <i class="fas fa-trash"></i>
@@ -127,7 +129,6 @@
         <div class="form-group">
             <label for="inputFakultas">Fakultas <i style="color: red;">*</i></label>
             <select name="fakultas" class="form-control" required="">
-              <option hidden="">-- Pilih Fakultas --</option>
               <option value="Fakultas Ekonomi Bisnis">Fakultas Ekonomi Bisnis</option>
               <option value="Fakultas Hukum">Fakultas Hukum</option>
               <option value="Fakultas Ilmu Administrasi">Fakultas Ilmu Administrasi</option>
